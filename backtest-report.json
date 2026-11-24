@@ -1,0 +1,317 @@
+{
+  "strategy": "r5/v1.4 trend-following (EMA20/50 cross in 3d, exit < EMA50, stop fill-2.5xATR14, $25/coin, $100 cap, no leverage)",
+  "period": "2024-01-01..2026-11-23",
+  "assumptions": "Fills at daily close, zero slippage, zero fees, zero funding. On-chain execution (HSKSwap fees + slippage + gas) will reduce returns.",
+  "totalPnlUsd": -15.29,
+  "totalTrades": 30,
+  "winRate": 0.267,
+  "worstDrawdownUsd": -12.86,
+  "perSymbol": {
+    "BTCUSDT": {
+      "trades": [
+        {
+          "symbol": "BTCUSDT",
+          "entry": 65376,
+          "exit": 61498.33,
+          "entryDate": "2024-07-24",
+          "exitDate": "2024-08-02",
+          "reason": "exit-ema50",
+          "pnl": -1.48
+        },
+        {
+          "symbol": "BTCUSDT",
+          "entry": 63339.99,
+          "exit": 60805.78,
+          "entryDate": "2024-09-23",
+          "exitDate": "2024-10-01",
+          "reason": "exit-ema50",
+          "pnl": -1
+        },
+        {
+          "symbol": "BTCUSDT",
+          "entry": 94638.68,
+          "exit": 102120.01,
+          "entryDate": "2025-04-25",
+          "exitDate": "2025-06-21",
+          "reason": "exit-ema50",
+          "pnl": 1.98
+        },
+        {
+          "symbol": "BTCUSDT",
+          "entry": 116447.59,
+          "exit": 112650.99,
+          "entryDate": "2025-09-17",
+          "exitDate": "2025-09-22",
+          "reason": "exit-ema50",
+          "pnl": -0.82
+        },
+        {
+          "symbol": "BTCUSDT",
+          "entry": 120529.35,
+          "exit": 112774.5,
+          "entryDate": "2025-10-02",
+          "exitDate": "2025-10-10",
+          "reason": "stop",
+          "pnl": -1.61
+        },
+        {
+          "symbol": "BTCUSDT",
+          "entry": 93673.14,
+          "exit": 88427.66,
+          "entryDate": "2026-01-18",
+          "exitDate": "2026-01-20",
+          "reason": "exit-ema50",
+          "pnl": -1.4
+        },
+        {
+          "symbol": "BTCUSDT",
+          "entry": 75154.29,
+          "exit": 75539.5,
+          "entryDate": "2026-04-16",
+          "exitDate": "2026-05-22",
+          "reason": "exit-ema50",
+          "pnl": 0.13
+        },
+        {
+          "symbol": "BTCUSDT",
+          "entry": 78338.03,
+          "exit": 80154.09,
+          "entryDate": "2026-08-21",
+          "exitDate": "2026-10-25",
+          "reason": "exit-ema50",
+          "pnl": 0.58
+        }
+      ],
+      "pnl": -3.62,
+      "openMtm": 0,
+      "maxDd": -4.33,
+      "openPosition": null,
+      "symbol": "BTCUSDT"
+    },
+    "ETHUSDT": {
+      "trades": [
+        {
+          "symbol": "ETHUSDT",
+          "entry": 2622.81,
+          "exit": 2524.61,
+          "entryDate": "2024-10-22",
+          "exitDate": "2024-10-23",
+          "reason": "exit-ema50",
+          "pnl": -0.94
+        },
+        {
+          "symbol": "ETHUSDT",
+          "entry": 2535.82,
+          "exit": 2440.62,
+          "entryDate": "2024-10-24",
+          "exitDate": "2024-10-25",
+          "reason": "exit-ema50",
+          "pnl": -0.94
+        },
+        {
+          "symbol": "ETHUSDT",
+          "entry": 2518.61,
+          "exit": 2511.49,
+          "entryDate": "2024-10-31",
+          "exitDate": "2024-11-01",
+          "reason": "exit-ema50",
+          "pnl": -0.07
+        },
+        {
+          "symbol": "ETHUSDT",
+          "entry": 2961.75,
+          "exit": 3417.01,
+          "entryDate": "2024-11-08",
+          "exitDate": "2024-12-19",
+          "reason": "exit-ema50",
+          "pnl": 3.84
+        },
+        {
+          "symbol": "ETHUSDT",
+          "entry": 2514.57,
+          "exit": 2406.49,
+          "entryDate": "2025-05-11",
+          "exitDate": "2025-06-20",
+          "reason": "exit-ema50",
+          "pnl": -1.07
+        },
+        {
+          "symbol": "ETHUSDT",
+          "entry": 3310.56,
+          "exit": 2939.88,
+          "entryDate": "2026-01-17",
+          "exitDate": "2026-01-20",
+          "reason": "stop",
+          "pnl": -2.8
+        },
+        {
+          "symbol": "ETHUSDT",
+          "entry": 2359.95,
+          "exit": 2252.9,
+          "entryDate": "2026-04-15",
+          "exitDate": "2026-04-29",
+          "reason": "exit-ema50",
+          "pnl": -1.13
+        },
+        {
+          "symbol": "ETHUSDT",
+          "entry": 1934.25,
+          "exit": 1844.94,
+          "entryDate": "2026-07-22",
+          "exitDate": "2026-08-01",
+          "reason": "exit-ema50",
+          "pnl": -1.15
+        }
+      ],
+      "pnl": -4.26,
+      "openMtm": 0,
+      "maxDd": -6.16,
+      "openPosition": null,
+      "symbol": "ETHUSDT"
+    },
+    "BNBUSDT": {
+      "trades": [
+        {
+          "symbol": "BNBUSDT",
+          "entry": 588.7,
+          "exit": 547.3,
+          "entryDate": "2024-09-22",
+          "exitDate": "2024-10-01",
+          "reason": "exit-ema50",
+          "pnl": -1.76
+        },
+        {
+          "symbol": "BNBUSDT",
+          "entry": 663.9,
+          "exit": 633.32,
+          "entryDate": "2025-05-10",
+          "exitDate": "2025-06-05",
+          "reason": "exit-ema50",
+          "pnl": -1.15
+        },
+        {
+          "symbol": "BNBUSDT",
+          "entry": 938.16,
+          "exit": 884.2,
+          "entryDate": "2026-01-16",
+          "exitDate": "2026-01-20",
+          "reason": "exit-ema50",
+          "pnl": -1.44
+        },
+        {
+          "symbol": "BNBUSDT",
+          "entry": 664.95,
+          "exit": 640.02,
+          "entryDate": "2026-05-12",
+          "exitDate": "2026-05-19",
+          "reason": "exit-ema50",
+          "pnl": -0.94
+        },
+        {
+          "symbol": "BNBUSDT",
+          "entry": 599.23,
+          "exit": 732.91,
+          "entryDate": "2026-08-10",
+          "exitDate": "2026-10-12",
+          "reason": "exit-ema50",
+          "pnl": 5.58
+        }
+      ],
+      "pnl": 0.29,
+      "openMtm": 0,
+      "maxDd": -5.28,
+      "openPosition": null,
+      "symbol": "BNBUSDT"
+    },
+    "SOLUSDT": {
+      "trades": [
+        {
+          "symbol": "SOLUSDT",
+          "entry": 184.49,
+          "exit": 152.77,
+          "entryDate": "2024-07-21",
+          "exitDate": "2024-08-02",
+          "reason": "stop",
+          "pnl": -4.3
+        },
+        {
+          "symbol": "SOLUSDT",
+          "entry": 156.75,
+          "exit": 140.18,
+          "entryDate": "2024-09-28",
+          "exitDate": "2024-10-02",
+          "reason": "exit-ema50",
+          "pnl": -2.64
+        },
+        {
+          "symbol": "SOLUSDT",
+          "entry": 252.42,
+          "exit": 213.03,
+          "entryDate": "2025-01-19",
+          "exitDate": "2025-02-01",
+          "reason": "exit-ema50",
+          "pnl": -3.9
+        },
+        {
+          "symbol": "SOLUSDT",
+          "entry": 147.54,
+          "exit": 156.2,
+          "entryDate": "2025-04-30",
+          "exitDate": "2025-05-30",
+          "reason": "exit-ema50",
+          "pnl": 1.47
+        },
+        {
+          "symbol": "SOLUSDT",
+          "entry": 160.69,
+          "exit": 162.71,
+          "entryDate": "2025-07-12",
+          "exitDate": "2025-08-01",
+          "reason": "exit-ema50",
+          "pnl": 0.31
+        },
+        {
+          "symbol": "SOLUSDT",
+          "entry": 97.37,
+          "exit": 89.24,
+          "entryDate": "2026-05-11",
+          "exitDate": "2026-05-15",
+          "reason": "stop",
+          "pnl": -2.09
+        },
+        {
+          "symbol": "SOLUSDT",
+          "entry": 78.13,
+          "exit": 75.01,
+          "entryDate": "2026-07-10",
+          "exitDate": "2026-07-13",
+          "reason": "exit-ema50",
+          "pnl": -1
+        },
+        {
+          "symbol": "SOLUSDT",
+          "entry": 78.12,
+          "exit": 75.88,
+          "entryDate": "2026-07-21",
+          "exitDate": "2026-07-23",
+          "reason": "exit-ema50",
+          "pnl": -0.72
+        },
+        {
+          "symbol": "SOLUSDT",
+          "entry": 87.66,
+          "exit": 105.76,
+          "entryDate": "2026-08-20",
+          "exitDate": "2026-10-12",
+          "reason": "exit-ema50",
+          "pnl": 5.16
+        }
+      ],
+      "pnl": -7.7,
+      "openMtm": 0,
+      "maxDd": -12.86,
+      "openPosition": null,
+      "symbol": "SOLUSDT"
+    }
+  }
+}

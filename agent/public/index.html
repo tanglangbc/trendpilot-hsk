@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TrendPilot — HSK Chain trend agent</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; color: #111; }
+  h1 { font-size: 1.4rem; } .card { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; } td, th { border-bottom: 1px solid #eee; padding: 6px 8px; text-align: left; font-size: 0.9rem; }
+  .muted { color: #666; font-size: 0.85rem; } pre { white-space: pre-wrap; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<h1>TrendPilot — AI trend-following agent on HSK Chain</h1>
+<p class="muted">Strategy r5/v1.4: EMA20/50 golden cross (3d window), exit below EMA50, stop = fill − 2.5×ATR(14). $25/coin, $100 cap, no leverage. Data: Binance daily candles. Venue: HSKSwap (Uniswap V3 fork).</p>
+<div class="card"><h2>State</h2><div id="state">loading…</div></div>
+<div class="card"><h2>Recent decisions</h2><pre id="decisions"></pre></div>
+<script>
+async function refresh() {
+  const r = await fetch('/api/state'); const s = await r.json();
+  document.getElementById('state').innerHTML =
+    `<p>mode: <b>${s.config.mode}</b> · network: <b>${s.config.network}</b> · trade $${s.config.tradeUsd}/coin · cap $${s.config.maxHeldUsd}</p>` +
+    `<p>paper cash: <b>$${(s.paperCashUsd ?? 0).toFixed(2)}</b></p>` +
+    `<table><tr><th>symbol</th><th>entry</th><th>stop</th><th>size</th></tr>` +
+    Object.entries(s.paperPositions || {}).map(([k, p]) =>
+      `<tr><td>${k}</td><td>${p.entryPrice}</td><td>${p.stopPrice.toFixed(2)}</td><td>$${p.amountUsd}</td></tr>`).join('') +
+    `</table>`;
+  document.getElementById('decisions').textContent =
+    (s.decisions || []).slice(-15).reverse().map(d =>
+      `${d.time} ${d.symbol} ${d.action} — ${d.reason}`).join('\n');
+}
+refresh(); setInterval(refresh, 15000);
+</script>
+</body>
+</html>

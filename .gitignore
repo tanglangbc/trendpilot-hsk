@@ -1,0 +1,6 @@
+node_modules/
+artifacts/
+state.json
+agent-config.json
+deployments/
+.env
