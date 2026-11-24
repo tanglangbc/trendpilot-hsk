@@ -76,7 +76,7 @@ Binance daily candles (data-api.binance.vision)
 
 ## Links (fill in after the user steps)
 
-- GitHub repo: <TODO — user creates, e.g. tanglangbc/trendpilot-hsk>
+- GitHub repo: https://github.com/tanglangbc/trendpilot-hsk
 - Demo video: <TODO — record `npm run demo` + dashboard walkthrough>
 - Testnet vault: <TODO — from deployments/testnet.json>
 - Testnet pool: <TODO — from deployments/testnet.json>
